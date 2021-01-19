@@ -1,8 +1,8 @@
     /*
-        function get_cssVar(varName) {
-            document.querySelector(":root").style.getPropertyValue(`--${varName}`);
-        }
-        */
+                    function get_cssVar(varName) {
+                        document.querySelector(":root").style.getPropertyValue(`--${varName}`);
+                    }
+                    */
 
     function set_cssVar(varName, value) {
         document.querySelector(":root").style.setProperty(`--${varName}`, value);
@@ -165,12 +165,14 @@
                 iSelectors.push(`
                 bg-${colorName},
                 [bg-${colorName}],
+                [background-color = "${colorName}"],
                 .bg-${colorName},
                 #bg-${colorName}{
                     background-color: ${colorValue};
                 }
                 txt-${colorName},
                 [txt-${colorName}],
+                [color = "${colorName}"],
                 .txt-${colorName},
                 #txt-${colorName}{
                     color: ${colorValue};
@@ -192,12 +194,14 @@
             iSelectors.push(`
                 bg-${colorName},
                 [bg-${colorName}],
+                [background-color = "${colorName}"],
                 .bg-${colorName},
                 #bg-${colorName}{
                     background-color: ${colorValue};
                 }
                 txt-${colorName},
                 [txt-${colorName}],
+                [color = "${colorName}"],
                 .txt-${colorName},
                 #txt-${colorName}{
                     color: ${colorValue};
@@ -217,12 +221,14 @@
         iSelectors.push(`
                 bg-${colorName},
                 [bg-${colorName}],
+                [background-color = "${colorName}"],
                 .bg-${colorName},
                 #bg-${colorName}{
                     background-color: ${colorValue};
                 }
                 txt-${colorName},
                 [txt-${colorName}],
+                [color = "${colorName}"],
                 .txt-${colorName},
                 #txt-${colorName}{
                     color: ${colorValue};
